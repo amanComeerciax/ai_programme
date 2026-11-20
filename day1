@@ -1,0 +1,18 @@
+Temperature:
+
+Temperature 0 (low):
+Model har step par sabse likely token chunta hai. Output almost same aata hai, predictable.
+
+Temperature 0.7 (high):
+Kam likely tokens ko bhi chance milta hai. Output mein variety aati hai, har baar thoda alag.
+
+Example: Prompt: “Billi ne ___”
+
+Next token ki probabilities: “doodh” 60%, “chuha” 30%, “khana” 10%.
+
+Low temp (0): Hamesha “doodh” chunega. Har baar: “Billi ne doodh piya.”
+High temp (0.7+): Kabhi “doodh”, kabhi “chuha”, kabhi “khana”. Runs: “Billi ne doodh piya.” / “Billi ne chuha pakda.” / “Billi ne khana khaya.”
+
+Yaad rakhne ka trick: Low = predictable, high = creative.
+
+Aur ek line mat bhoolna: 0 par bhi 100% same ki guarantee nahi hoti.
